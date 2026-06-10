@@ -1,0 +1,41 @@
+{
+  "_comentario": "Lista negra de IPs conocidas por actividad maliciosa. Fuentes: AbuseIPDB, Spamhaus, Feodo Tracker.",
+  "ips_peligrosas": [
+    {
+      "ip": "185.220.101.47",
+      "tipo_riesgo": "Nodo de salida TOR / Botnet",
+      "fuente": "AbuseIPDB",
+      "nivel": "CRITICO"
+    },
+    {
+      "ip": "45.142.212.100",
+      "tipo_riesgo": "Comando y Control de Malware (C2)",
+      "fuente": "Feodo Tracker",
+      "nivel": "CRITICO"
+    },
+    {
+      "ip": "194.165.16.11",
+      "tipo_riesgo": "Distribuidor de Ransomware",
+      "fuente": "Spamhaus",
+      "nivel": "ALTO"
+    },
+    {
+      "ip": "91.92.109.43",
+      "tipo_riesgo": "Escáner de puertos / Reconocimiento",
+      "fuente": "AbuseIPDB",
+      "nivel": "MEDIO"
+    },
+    {
+      "ip": "198.199.77.154",
+      "tipo_riesgo": "Servidor de Phishing",
+      "fuente": "PhishTank",
+      "nivel": "ALTO"
+    },
+    {
+      "ip": "10.0.0.99",
+      "tipo_riesgo": "IP de prueba para demostración en laboratorio",
+      "fuente": "Manual",
+      "nivel": "DEMO"
+    }
+  ]
+}

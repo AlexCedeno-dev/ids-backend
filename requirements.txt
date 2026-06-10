@@ -1,0 +1,31 @@
+# ============================================================
+# Sistema IDS Institucional - Dependencias
+# ============================================================
+# Captura de paquetes de red
+scapy==2.5.0
+
+# Variables de entorno (.env)
+python-dotenv==1.0.0
+
+# Consultas Whois y geolocalización IP
+ipwhois==1.2.0
+requests==2.31.0
+
+# Base de datos SQLite (incluida en Python, no requiere instalación)
+# sqlite3 -> stdlib
+
+# Manejo de fechas (incluida en Python)
+# datetime -> stdlib
+
+# Envío de correo SMTP (incluida en Python)
+# smtplib -> stdlib
+# email   -> stdlib
+
+# Colores en terminal para mejor visualización
+colorama==0.4.6
+
+# Utilidades de red
+netifaces==0.11.0
+
+# Dashboard web
+flask>=3.0.0

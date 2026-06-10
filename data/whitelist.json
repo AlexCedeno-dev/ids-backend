@@ -1,0 +1,35 @@
+{
+  "_comentario": "Lista blanca de dispositivos autorizados en la red. Agrega aquí las IPs y MACs de equipos conocidos.",
+  "dispositivos": [
+    {
+      "nombre": "Router Principal",
+      "ip": "192.168.1.254",
+      "mac": "10:50:72:2b:02:00",
+      "rol": "infraestructura"
+    },
+    {
+      "nombre": "PC Alex - Admin",
+      "ip": "192.168.1.80",
+      "mac": "c4:03:a8:2d:a8:ca",
+      "rol": "admin"
+    },
+    {
+      "nombre": "Laptop Docente",
+      "ip": "192.168.1.20",
+      "mac": "aa:bb:cc:dd:ee:03",
+      "rol": "usuario"
+    },
+    {
+      "nombre": "PC Laboratorio 01",
+      "ip": "192.168.1.101",
+      "mac": "aa:bb:cc:dd:ee:04",
+      "rol": "usuario"
+    },
+    {
+      "nombre": "PC Laboratorio 02",
+      "ip": "192.168.1.102",
+      "mac": "aa:bb:cc:dd:ee:05",
+      "rol": "usuario"
+    }
+  ]
+}
