@@ -61,6 +61,14 @@ def es_autorizado(ip: str, mac: str) -> bool:
         logger.debug(f"[AUTORIZADO] {nombre} — IP: {ip} | MAC: {mac}")
         return True
 
+    # Solo alertar para IPs internas (192.168.x.x); el tráfico externo
+    # (Azure, GitHub, AWS, Google, etc.) solo se registra en DEBUG.
+    es_interna = ip.startswith("192.168.")
+
+    if not es_interna:
+        logger.debug(f"[EXTERNO] IP: {ip} | MAC: {mac} — tráfico externo, ignorado.")
+        return False
+
     razon = []
     if not ip_ok:
         razon.append(f"IP '{ip}' no registrada")
@@ -71,7 +79,7 @@ def es_autorizado(ip: str, mac: str) -> bool:
         f"[NO AUTORIZADO] IP: {ip} | MAC: {mac} | Razón: {', '.join(razon)}"
     )
 
-    # Anti-spam: solo un correo por IP por sesión
+    # Anti-spam: solo un correo por IP interna por sesión
     if ip not in _ips_ya_alertadas:
         _ips_ya_alertadas.add(ip)
         logger.info(f"[ALERTA] Enviando correo de advertencia para IP: {ip}")

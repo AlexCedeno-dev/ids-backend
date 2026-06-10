@@ -15,7 +15,8 @@ import re
 import sqlite3
 from datetime import datetime
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 # Rutas absolutas para que el dashboard funcione independientemente
 # del directorio de trabajo desde el que se lance
@@ -24,8 +25,10 @@ DB_FILE        = os.path.join(BASE_DIR, "data",    "logs.db")
 ALERTS_LOG     = os.path.join(BASE_DIR, "reports", "alertas.log")
 BLACKLIST_FILE = os.path.join(BASE_DIR, "data",    "blacklist_ips.json")
 WHITELIST_FILE = os.path.join(BASE_DIR, "data",    "whitelist.json")
+ENV_FILE       = os.path.join(BASE_DIR, ".env")
 
 app = Flask(__name__)
+CORS(app)
 
 
 # ── Helpers de base de datos ──────────────────────────────────────────────────
@@ -162,11 +165,6 @@ def _get_top_dominios(limit: int = 10) -> list:
 
 # ── Rutas Flask ───────────────────────────────────────────────────────────────
 
-@app.route("/")
-def index():
-    return render_template("index.html")
-
-
 @app.route("/api/stats")
 def api_stats():
     return jsonify(_get_stats())
@@ -203,6 +201,182 @@ def api_dashboard():
         "top_dominios": _get_top_dominios(10),
         "updated_at":   datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     })
+
+
+# ── Helpers de archivos JSON ──────────────────────────────────────────────────
+
+def _read_json(path: str) -> dict:
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _write_json(path: str, data: dict) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def _valid_ip(ip: str) -> bool:
+    parts = ip.split(".")
+    return (
+        len(parts) == 4
+        and all(p.isdigit() and 0 <= int(p) <= 255 for p in parts)
+    )
+
+
+# ── Rutas — Whitelist ─────────────────────────────────────────────────────────
+
+@app.route("/api/whitelist", methods=["GET"])
+def api_whitelist_get():
+    try:
+        return jsonify(_read_json(WHITELIST_FILE))
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/whitelist", methods=["POST"])
+def api_whitelist_post():
+    body = request.get_json(silent=True) or {}
+    nombre = (body.get("nombre") or "").strip()
+    ip     = (body.get("ip")     or "").strip()
+    mac    = (body.get("mac")    or "").strip().lower()
+    rol    = (body.get("rol")    or "usuario").strip()
+
+    if not nombre or not ip or not mac:
+        return jsonify({"error": "Campos requeridos: nombre, ip, mac"}), 400
+    if not _valid_ip(ip):
+        return jsonify({"error": f"IP inválida: {ip}"}), 400
+
+    try:
+        data = _read_json(WHITELIST_FILE)
+        dispositivos = data.get("dispositivos", [])
+
+        if any(d.get("ip") == ip for d in dispositivos):
+            return jsonify({"error": f"La IP {ip} ya existe en la whitelist"}), 409
+
+        dispositivos.append({"nombre": nombre, "ip": ip, "mac": mac, "rol": rol})
+        data["dispositivos"] = dispositivos
+        _write_json(WHITELIST_FILE, data)
+        return jsonify({"ok": True, "dispositivo": {"nombre": nombre, "ip": ip, "mac": mac, "rol": rol}}), 201
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/whitelist/<ip>", methods=["DELETE"])
+def api_whitelist_delete(ip: str):
+    try:
+        data = _read_json(WHITELIST_FILE)
+        dispositivos = data.get("dispositivos", [])
+        originales = len(dispositivos)
+        data["dispositivos"] = [d for d in dispositivos if d.get("ip") != ip]
+
+        if len(data["dispositivos"]) == originales:
+            return jsonify({"error": f"IP {ip} no encontrada en la whitelist"}), 404
+
+        _write_json(WHITELIST_FILE, data)
+        return jsonify({"ok": True, "eliminada": ip})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ── Rutas — Blacklist ─────────────────────────────────────────────────────────
+
+@app.route("/api/blacklist", methods=["GET"])
+def api_blacklist_get():
+    try:
+        return jsonify(_read_json(BLACKLIST_FILE))
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/blacklist", methods=["POST"])
+def api_blacklist_post():
+    body = request.get_json(silent=True) or {}
+    ip          = (body.get("ip")          or "").strip()
+    tipo_riesgo = (body.get("tipo_riesgo") or "Desconocido").strip()
+    nivel       = (body.get("nivel")       or "ALTO").strip().upper()
+    fuente      = (body.get("fuente")      or "Manual").strip()
+
+    if not ip:
+        return jsonify({"error": "Campo requerido: ip"}), 400
+    if not _valid_ip(ip):
+        return jsonify({"error": f"IP inválida: {ip}"}), 400
+    if nivel not in {"CRITICO", "ALTO", "MEDIO", "BAJO", "DEMO"}:
+        return jsonify({"error": "nivel debe ser CRITICO, ALTO, MEDIO, BAJO o DEMO"}), 400
+
+    try:
+        data = _read_json(BLACKLIST_FILE)
+        ips_peligrosas = data.get("ips_peligrosas", [])
+
+        if any(e.get("ip") == ip for e in ips_peligrosas):
+            return jsonify({"error": f"La IP {ip} ya existe en la blacklist"}), 409
+
+        entrada = {"ip": ip, "tipo_riesgo": tipo_riesgo, "nivel": nivel, "fuente": fuente}
+        ips_peligrosas.append(entrada)
+        data["ips_peligrosas"] = ips_peligrosas
+        _write_json(BLACKLIST_FILE, data)
+        return jsonify({"ok": True, "entrada": entrada}), 201
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ── Ruta — Configuración email ────────────────────────────────────────────────
+
+@app.route("/api/config/email", methods=["POST"])
+def api_config_email():
+    body  = request.get_json(silent=True) or {}
+    email = (body.get("email") or "").strip()
+
+    if not email or "@" not in email:
+        return jsonify({"error": "Email inválido"}), 400
+
+    try:
+        with open(ENV_FILE, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+
+        updated = False
+        new_lines = []
+        for line in lines:
+            if line.startswith("ADMIN_EMAIL="):
+                new_lines.append(f"ADMIN_EMAIL={email}\n")
+                updated = True
+            else:
+                new_lines.append(line)
+
+        if not updated:
+            new_lines.append(f"ADMIN_EMAIL={email}\n")
+
+        with open(ENV_FILE, "w", encoding="utf-8") as f:
+            f.writelines(new_lines)
+
+        return jsonify({"ok": True, "admin_email": email})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+# ── Ruta — Limpiar logs ───────────────────────────────────────────────────────
+
+@app.route("/api/logs/clear", methods=["POST"])
+def api_logs_clear():
+    try:
+        conn = sqlite3.connect(DB_FILE)
+        cur  = conn.cursor()
+        cur.execute("DROP TABLE IF EXISTS dns_log")
+        cur.execute("""
+            CREATE TABLE dns_log (
+                id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                timestamp   TEXT    NOT NULL,
+                ip_origen   TEXT    NOT NULL,
+                mac_origen  TEXT    NOT NULL,
+                dominio     TEXT    NOT NULL,
+                tipo_query  TEXT    DEFAULT 'A',
+                autorizado  INTEGER DEFAULT 1
+            )
+        """)
+        conn.commit()
+        conn.close()
+        return jsonify({"ok": True, "mensaje": "Base de datos reinicializada"})
+    except sqlite3.Error as e:
+        return jsonify({"error": str(e)}), 500
 
 
 # ── Punto de entrada ──────────────────────────────────────────────────────────

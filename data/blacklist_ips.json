@@ -21,7 +21,7 @@
     },
     {
       "ip": "91.92.109.43",
-      "tipo_riesgo": "Escáner de puertos / Reconocimiento",
+      "tipo_riesgo": "Esc\u00e1ner de puertos / Reconocimiento",
       "fuente": "AbuseIPDB",
       "nivel": "MEDIO"
     },
@@ -33,7 +33,7 @@
     },
     {
       "ip": "10.0.0.99",
-      "tipo_riesgo": "IP de prueba para demostración en laboratorio",
+      "tipo_riesgo": "IP de prueba para demostraci\u00f3n en laboratorio",
       "fuente": "Manual",
       "nivel": "DEMO"
     }
