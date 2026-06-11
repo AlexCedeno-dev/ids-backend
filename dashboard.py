@@ -285,13 +285,16 @@ def api_whitelist_get():
 @app.route("/api/whitelist", methods=["POST"])
 def api_whitelist_post():
     body = request.get_json(silent=True) or {}
-    nombre = (body.get("nombre") or "").strip()
-    ip     = (body.get("ip")     or "").strip()
-    mac    = (body.get("mac")    or "").strip().lower()
-    rol    = (body.get("rol")    or "usuario").strip()
+    print(f"[DEBUG] POST /api/whitelist — body recibido: {body}")
 
-    if not nombre or not ip or not mac:
-        return jsonify({"error": "Campos requeridos: nombre, ip, mac"}), 400
+    # Acepta tanto {tipo, valor, descripcion} (frontend) como {nombre, ip, mac} (legado)
+    nombre = (body.get("descripcion") or body.get("nombre") or "").strip()
+    ip     = (body.get("valor")       or body.get("ip")     or "").strip()
+    mac    = (body.get("mac")         or "00:00:00:00:00:00").strip().lower()
+    rol    = (body.get("rol")         or "usuario").strip()
+
+    if not nombre or not ip:
+        return jsonify({"error": "Campos requeridos: descripcion (o nombre) y valor (o ip)"}), 400
     if not _valid_ip(ip):
         return jsonify({"error": f"IP inválida: {ip}"}), 400
 
@@ -302,10 +305,11 @@ def api_whitelist_post():
         if any(d.get("ip") == ip for d in dispositivos):
             return jsonify({"error": f"La IP {ip} ya existe en la whitelist"}), 409
 
-        dispositivos.append({"nombre": nombre, "ip": ip, "mac": mac, "rol": rol})
+        dispositivo = {"nombre": nombre, "ip": ip, "mac": mac, "rol": rol}
+        dispositivos.append(dispositivo)
         data["dispositivos"] = dispositivos
         _write_json(WHITELIST_FILE, data)
-        return jsonify({"ok": True, "dispositivo": {"nombre": nombre, "ip": ip, "mac": mac, "rol": rol}}), 201
+        return jsonify({"success": True, "mensaje": "Dispositivo agregado", "dispositivo": dispositivo}), 201
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
