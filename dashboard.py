@@ -75,16 +75,65 @@ def _get_stats() -> dict:
     }
 
 
+_DNS_NOISE = (
+    "gvt2", "gvt3", "beacons", "googlevideo",
+    "doubleclick", "gstatic", "ggpht", "googlesyndication",
+)
+
+
+def _cargar_mac_nombres() -> dict:
+    """Devuelve un mapa MAC (minúsculas) → nombre desde la whitelist."""
+    try:
+        data = _read_json(WHITELIST_FILE)
+        return {
+            d["mac"].strip().lower(): d.get("nombre", "Desconocido")
+            for d in data.get("dispositivos", [])
+            if d.get("mac")
+        }
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
+        return {}
+
+
+def _resolver_nombre(ip: str, mac: str, mac_nombres: dict) -> str:
+    if mac in mac_nombres:
+        return mac_nombres[mac]
+    if ip.startswith("fe80::"):
+        return "Dispositivo Local"
+    if ip.startswith("192.168."):
+        return "Red Local " + ip.replace(".", "")[-4:]
+    return "Equipo " + ip[-4:]
+
+
 def _get_dns_recent(limit: int = 50) -> list:
-    return _db_query(
+    # Traer más filas de las necesarias para que al deduplicar/filtrar
+    # el resultado final siga siendo representativo.
+    rows = _db_query(
         """
         SELECT timestamp, ip_origen, mac_origen, dominio, tipo_query, autorizado
         FROM dns_log
         ORDER BY id DESC
         LIMIT ?
         """,
-        (limit,)
+        (limit * 6,)
     )
+
+    mac_nombres = _cargar_mac_nombres()
+    seen_domains: set = set()
+    result = []
+    for row in rows:
+        dominio = row.get("dominio", "")
+        if any(n in dominio for n in _DNS_NOISE):
+            continue
+        if dominio in seen_domains:
+            continue
+        seen_domains.add(dominio)
+        ip  = row.get("ip_origen",  "")
+        mac = row.get("mac_origen", "").lower()
+        row["dispositivo_nombre"] = _resolver_nombre(ip, mac, mac_nombres)
+        result.append(row)
+        if len(result) >= limit:
+            break
+    return result
 
 
 def _get_alertas_dispositivos() -> list:

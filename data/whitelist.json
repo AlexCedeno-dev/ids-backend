@@ -30,6 +30,12 @@
       "ip": "192.168.1.102",
       "mac": "aa:bb:cc:dd:ee:05",
       "rol": "usuario"
+    },
+    {
+      "nombre": "Dispositivo Desconocido 78",
+      "ip": "192.168.1.78",
+      "mac": "18:58:80:51:2c:36",
+      "rol": "usuario"
     }
   ]
 }

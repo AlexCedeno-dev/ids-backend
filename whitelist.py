@@ -61,9 +61,21 @@ def es_autorizado(ip: str, mac: str) -> bool:
         logger.debug(f"[AUTORIZADO] {nombre} — IP: {ip} | MAC: {mac}")
         return True
 
-    # Solo alertar para IPs internas (192.168.x.x); el tráfico externo
-    # (Azure, GitHub, AWS, Google, etc.) solo se registra en DEBUG.
-    es_interna = ip.startswith("192.168.")
+    # fe80:: es link-local IPv6 (siempre privada); si además la MAC ya está
+    # registrada, el dispositivo es conocido aunque tenga una IPv6 distinta.
+    if ip.startswith("fe80::") or mac_ok:
+        logger.debug(f"[AUTORIZADO-IPV6] IP: {ip} | MAC: {mac} — link-local o MAC conocida.")
+        return True
+
+    # IPs internas que requieren validación completa:
+    #   192.168.x.x  → IPv4 LAN
+    #   fe80::       → IPv6 link-local  (ya resuelto arriba, pero incluido por completitud)
+    #   2806:        → IPv6 global de la red local
+    es_interna = (
+        ip.startswith("192.168.")
+        or ip.startswith("fe80::")
+        or ip.startswith("2806:")
+    )
 
     if not es_interna:
         logger.debug(f"[EXTERNO] IP: {ip} | MAC: {mac} — tráfico externo, ignorado.")

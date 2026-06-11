@@ -15,7 +15,7 @@ Descripción: Núcleo de captura de paquetes usando Scapy.
 import logging
 from datetime import datetime
 
-from scapy.all import sniff, ARP, DNS, DNSQR, IP, Ether, UDP, TCP
+from scapy.all import sniff, ARP, DNS, DNSQR, IP, IPv6, Ether, UDP, TCP
 
 import config
 import whitelist
@@ -44,12 +44,15 @@ def _procesar_paquete(pkt) -> None:
 
         mac_origen = pkt[Ether].src.lower()
 
-        # ── Extraer capa IP ─────────────────────────────────────────────────
-        if not pkt.haslayer(IP):
-            return  # Solo procesamos tráfico IPv4
-
-        ip_origen  = pkt[IP].src
-        ip_destino = pkt[IP].dst
+        # ── Extraer capa IP (IPv4 o IPv6) ───────────────────────────────────
+        if pkt.haslayer(IP):
+            ip_origen  = pkt[IP].src
+            ip_destino = pkt[IP].dst
+        elif pkt.haslayer(IPv6):
+            ip_origen  = pkt[IPv6].src
+            ip_destino = pkt[IPv6].dst
+        else:
+            return
 
         # Ignorar IPs de broadcast y multicast
         if ip_origen in _IPS_IGNORAR or ip_destino in _IPS_IGNORAR:
@@ -109,13 +112,13 @@ def iniciar_captura() -> None:
     """
     interfaz = config.NETWORK_INTERFACE
     logger.info(f"Iniciando captura en interfaz: {interfaz}")
-    logger.info("Filtro activo: IP, ARP, DNS — Solo tráfico de red local")
+    logger.info("Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local")
     logger.info("Presiona Ctrl+C en main.py para detener el sistema.")
 
     try:
         sniff(
             iface   = interfaz,
-            filter  = "ip or arp",          # Filtro BPF eficiente
+            filter  = "ip or ip6 or arp",   # Filtro BPF: IPv4, IPv6 y ARP
             prn     = _procesar_paquete,    # Callback por cada paquete
             store   = False,                # No guardar en RAM
             count   = 0                     # Capturar indefinidamente
