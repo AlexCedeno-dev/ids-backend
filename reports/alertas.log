@@ -14940,3 +14940,981 @@ Ejecuta el sistema con: sudo python3 main.py
 2026-06-10 21:25:13 [INFO] IDS.DNS: [DNS] AUTORIZADO | fe80::4af:6471:3cbe:c307 → _companion-link._tcp.local (PTR)
 [2026-06-10 21:25:16] DNS | Estado: AUTORIZADO | IP: fe80::4af:6471:3cbe:c307 | MAC: b6:b0:30:a6:6b:f1 | Dominio: _airplay-bds._tcp.local | Tipo: PTR
 2026-06-10 21:25:16 [INFO] IDS.DNS: [DNS] AUTORIZADO | fe80::4af:6471:3cbe:c307 → _airplay-bds._tcp.local (PTR)
+2026-06-17 16:50:57 [INFO] IDS.Main: Inicializando módulos del IDS...
+2026-06-17 16:50:57 [INFO] IDS.Whitelist: Whitelist cargada: 6 IPs | 6 MACs autorizadas.
+2026-06-17 16:50:57 [INFO] IDS.ThreatIntel: Blacklist cargada: 6 IPs peligrosas registradas.
+2026-06-17 16:50:57 [INFO] IDS.DNS: Base de datos inicializada en: /home/alexced06/Documentos/PROYECTO_DE_CIBERSEGURIDAD/ids_project/data/logs.db
+2026-06-17 16:50:57 [INFO] IDS.Main: Sistema listo | IPs autorizadas: 6 | IPs peligrosas: 6
+2026-06-17 16:50:57 [INFO] IDS.Sniffer: Iniciando captura en interfaz: wlo1
+2026-06-17 16:50:57 [INFO] IDS.Sniffer: Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local
+2026-06-17 16:50:57 [INFO] IDS.Sniffer: Presiona Ctrl+C en main.py para detener el sistema.
+2026-06-17 16:50:57 [ERROR] IDS.Sniffer: Permisos insuficientes para capturar paquetes.
+Ejecuta el sistema con: sudo python3 main.py
+2026-06-17 16:52:29 [INFO] IDS.Main: Inicializando módulos del IDS...
+2026-06-17 16:52:29 [INFO] IDS.Whitelist: Whitelist cargada: 6 IPs | 6 MACs autorizadas.
+2026-06-17 16:52:29 [INFO] IDS.ThreatIntel: Blacklist cargada: 6 IPs peligrosas registradas.
+2026-06-17 16:52:29 [INFO] IDS.DNS: Base de datos inicializada en: /home/alexced06/Documentos/PROYECTO_DE_CIBERSEGURIDAD/ids_project/data/logs.db
+2026-06-17 16:52:29 [INFO] IDS.Main: Sistema listo | IPs autorizadas: 6 | IPs peligrosas: 6
+2026-06-17 16:52:29 [INFO] IDS.Sniffer: Iniciando captura en interfaz: wlo1
+2026-06-17 16:52:29 [INFO] IDS.Sniffer: Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local
+2026-06-17 16:52:29 [INFO] IDS.Sniffer: Presiona Ctrl+C en main.py para detener el sistema.
+[2026-06-17 16:52:48] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: 65
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (65)
+[2026-06-17 16:52:48] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: A
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (A)
+[2026-06-17 16:52:48] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: A
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (A)
+[2026-06-17 16:52:48] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: 65
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (65)
+[2026-06-17 16:52:48] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (65)
+[2026-06-17 16:52:48] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (A)
+[2026-06-17 16:52:48] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (A)
+[2026-06-17 16:52:48] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (65)
+[2026-06-17 16:52:48] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: 65
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (65)
+[2026-06-17 16:52:48] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: A
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (A)
+[2026-06-17 16:52:48] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: 65
+2026-06-17 16:52:48 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (65)
+[2026-06-17 16:52:48] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: A
+2026-06-17 16:52:49 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (A)
+[2026-06-17 16:52:49] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 16:52:49 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → content-autofill.googleapis.com (65)
+[2026-06-17 16:52:49] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: content-autofill.googleapis.com | Tipo: A
+2026-06-17 16:52:49 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → content-autofill.googleapis.com (A)
+[2026-06-17 16:52:49] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: content-autofill.googleapis.com | Tipo: A
+2026-06-17 16:52:49 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → content-autofill.googleapis.com (A)
+[2026-06-17 16:52:49] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 16:52:49 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → content-autofill.googleapis.com (65)
+[2026-06-17 16:53:03] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 16:53:03 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (65)
+[2026-06-17 16:53:03] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: A
+2026-06-17 16:53:03 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (A)
+[2026-06-17 16:53:03] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 16:53:03 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (65)
+[2026-06-17 16:53:03] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:53:03 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 16:53:03] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: A
+2026-06-17 16:53:03 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (A)
+[2026-06-17 16:53:03] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:53:03 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+2026-06-17 16:53:29 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2009 | Dominios únicos: 127 | No autorizados: 210
+[2026-06-17 16:53:31] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: android.clients.google.com | Tipo: 65
+2026-06-17 16:53:31 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → android.clients.google.com (65)
+[2026-06-17 16:53:31] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: android.clients.google.com | Tipo: A
+2026-06-17 16:53:31 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → android.clients.google.com (A)
+[2026-06-17 16:53:31] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: android.clients.google.com | Tipo: A
+2026-06-17 16:53:31 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → android.clients.google.com (A)
+[2026-06-17 16:53:31] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: android.clients.google.com | Tipo: 65
+2026-06-17 16:53:31 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → android.clients.google.com (65)
+[2026-06-17 16:53:31] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: android.l.google.com | Tipo: 65
+2026-06-17 16:53:31 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → android.l.google.com (65)
+[2026-06-17 16:53:31] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: android.l.google.com | Tipo: 65
+2026-06-17 16:53:31 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → android.l.google.com (65)
+[2026-06-17 16:53:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 16:53:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 16:53:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 16:53:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 16:54:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: 65
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (65)
+[2026-06-17 16:54:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: A
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (A)
+[2026-06-17 16:54:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: 65
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (65)
+[2026-06-17 16:54:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: A
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (A)
+[2026-06-17 16:54:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (65)
+[2026-06-17 16:54:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (A)
+[2026-06-17 16:54:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (65)
+[2026-06-17 16:54:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 16:54:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 16:54:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 16:54:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (A)
+[2026-06-17 16:54:15] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:54:15 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 16:54:15] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:54:15 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+[2026-06-17 16:54:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 16:54:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 16:54:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 16:54:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (A)
+[2026-06-17 16:54:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 16:54:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (A)
+[2026-06-17 16:54:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 16:54:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+[2026-06-17 16:54:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 16:54:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 16:54:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 16:54:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 16:54:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 16:54:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 16:54:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 16:54:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+2026-06-17 16:54:29 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2037 | Dominios únicos: 129 | No autorizados: 224
+[2026-06-17 16:55:01] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 16:55:01 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 16:55:01] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 16:55:01 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 16:55:02] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: A
+2026-06-17 16:55:02 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (A)
+[2026-06-17 16:55:02] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: A
+2026-06-17 16:55:02 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (A)
+2026-06-17 16:55:29 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2041 | Dominios únicos: 129 | No autorizados: 226
+[2026-06-17 16:55:47] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 16:55:47 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 16:55:47] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 16:55:47 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 16:55:47] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 16:55:47 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 16:55:47] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 16:55:47 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 16:55:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 16:55:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 16:55:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 16:55:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+[2026-06-17 16:56:10] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 16:56:10 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (65)
+[2026-06-17 16:56:10] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: A
+2026-06-17 16:56:10 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (A)
+[2026-06-17 16:56:10] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: A
+2026-06-17 16:56:10 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (A)
+[2026-06-17 16:56:10] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 16:56:10 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (65)
+[2026-06-17 16:56:10] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:56:10 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 16:56:10] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:56:10 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+[2026-06-17 16:56:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: 65
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (65)
+[2026-06-17 16:56:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: A
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (A)
+[2026-06-17 16:56:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: A
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (A)
+[2026-06-17 16:56:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: 65
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (65)
+[2026-06-17 16:56:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: optimizationguide-pa.googleapis.com | Tipo: 65
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → optimizationguide-pa.googleapis.com (65)
+[2026-06-17 16:56:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: optimizationguide-pa.googleapis.com | Tipo: A
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → optimizationguide-pa.googleapis.com (A)
+[2026-06-17 16:56:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: optimizationguide-pa.googleapis.com | Tipo: 65
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → optimizationguide-pa.googleapis.com (65)
+[2026-06-17 16:56:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: optimizationguide-pa.googleapis.com | Tipo: A
+2026-06-17 16:56:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → optimizationguide-pa.googleapis.com (A)
+[2026-06-17 16:56:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.googleadservices.com | Tipo: 65
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.googleadservices.com (65)
+[2026-06-17 16:56:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.googleadservices.com | Tipo: A
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.googleadservices.com (A)
+[2026-06-17 16:56:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.googleadservices.com | Tipo: A
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.googleadservices.com (A)
+[2026-06-17 16:56:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.googleadservices.com | Tipo: 65
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.googleadservices.com (65)
+[2026-06-17 16:56:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (65)
+[2026-06-17 16:56:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (A)
+[2026-06-17 16:56:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (65)
+[2026-06-17 16:56:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (A)
+[2026-06-17 16:56:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ep1.adtrafficquality.google | Tipo: 65
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ep1.adtrafficquality.google (65)
+[2026-06-17 16:56:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ep1.adtrafficquality.google | Tipo: A
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ep1.adtrafficquality.google (A)
+[2026-06-17 16:56:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ep1.adtrafficquality.google | Tipo: 65
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ep1.adtrafficquality.google (65)
+[2026-06-17 16:56:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ep1.adtrafficquality.google | Tipo: A
+2026-06-17 16:56:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ep1.adtrafficquality.google (A)
+[2026-06-17 16:56:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: csp.withgoogle.com | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → csp.withgoogle.com (65)
+[2026-06-17 16:56:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: csp.withgoogle.com | Tipo: A
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → csp.withgoogle.com (A)
+[2026-06-17 16:56:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: csp.withgoogle.com | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → csp.withgoogle.com (65)
+[2026-06-17 16:56:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: csp.withgoogle.com | Tipo: A
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → csp.withgoogle.com (A)
+[2026-06-17 16:56:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ep2.adtrafficquality.google | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ep2.adtrafficquality.google (65)
+[2026-06-17 16:56:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ep2.adtrafficquality.google | Tipo: A
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ep2.adtrafficquality.google (A)
+[2026-06-17 16:56:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ep2.adtrafficquality.google | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ep2.adtrafficquality.google (65)
+[2026-06-17 16:56:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ep2.adtrafficquality.google | Tipo: A
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ep2.adtrafficquality.google (A)
+[2026-06-17 16:56:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ep2.adtrafficquality.google | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ep2.adtrafficquality.google (65)
+[2026-06-17 16:56:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (65)
+[2026-06-17 16:56:22] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: A
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (A)
+[2026-06-17 16:56:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: A
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (A)
+[2026-06-17 16:56:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ep2.adtrafficquality.google | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ep2.adtrafficquality.google (65)
+[2026-06-17 16:56:22] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: 65
+2026-06-17 16:56:22 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (65)
+[2026-06-17 16:56:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogs.google.com | Tipo: 65
+2026-06-17 16:56:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogs.google.com (65)
+[2026-06-17 16:56:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogs.google.com | Tipo: A
+2026-06-17 16:56:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogs.google.com (A)
+[2026-06-17 16:56:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogs.google.com | Tipo: A
+2026-06-17 16:56:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogs.google.com (A)
+[2026-06-17 16:56:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogs.google.com | Tipo: 65
+2026-06-17 16:56:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogs.google.com (65)
+[2026-06-17 16:56:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www3.l.google.com | Tipo: 65
+2026-06-17 16:56:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www3.l.google.com (65)
+[2026-06-17 16:56:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www3.l.google.com | Tipo: 65
+2026-06-17 16:56:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www3.l.google.com (65)
+2026-06-17 16:56:29 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2093 | Dominios únicos: 131 | No autorizados: 252
+[2026-06-17 16:56:31] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.gstatic.com | Tipo: 65
+2026-06-17 16:56:31 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.gstatic.com (65)
+[2026-06-17 16:56:31] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.gstatic.com | Tipo: A
+2026-06-17 16:56:31 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.gstatic.com (A)
+[2026-06-17 16:56:31] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.gstatic.com | Tipo: 65
+2026-06-17 16:56:31 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.gstatic.com (65)
+[2026-06-17 16:56:31] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.gstatic.com | Tipo: A
+2026-06-17 16:56:31 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.gstatic.com (A)
+[2026-06-17 16:56:58] DNS | Estado: AUTORIZADO | IP: fe80::949:9f8c:4b13:8d9f | MAC: c4:03:a8:2d:a8:ca | Dominio: _ipp._tcp.local | Tipo: PTR
+2026-06-17 16:56:58 [INFO] IDS.DNS: [DNS] AUTORIZADO | fe80::949:9f8c:4b13:8d9f → _ipp._tcp.local (PTR)
+2026-06-17 16:58:21 [INFO] IDS.Main: Inicializando módulos del IDS...
+2026-06-17 16:58:21 [INFO] IDS.Whitelist: Whitelist cargada: 6 IPs | 6 MACs autorizadas.
+2026-06-17 16:58:21 [INFO] IDS.ThreatIntel: Blacklist cargada: 6 IPs peligrosas registradas.
+2026-06-17 16:58:21 [INFO] IDS.DNS: Base de datos inicializada en: /home/alexced06/Documentos/PROYECTO_DE_CIBERSEGURIDAD/ids_project/data/logs.db
+2026-06-17 16:58:21 [INFO] IDS.Main: Sistema listo | IPs autorizadas: 6 | IPs peligrosas: 6
+2026-06-17 16:58:21 [INFO] IDS.Sniffer: Iniciando captura en interfaz: wlo1
+2026-06-17 16:58:21 [INFO] IDS.Sniffer: Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local
+2026-06-17 16:58:21 [INFO] IDS.Sniffer: Presiona Ctrl+C en main.py para detener el sistema.
+[2026-06-17 16:58:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 16:58:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 16:58:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 16:58:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 16:58:40] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 16:58:40 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 16:58:40] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 16:58:40 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 16:58:40] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 16:58:40 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 16:58:40] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 16:58:40 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 16:58:59] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: translate.googleapis.com | Tipo: 65
+2026-06-17 16:58:59 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → translate.googleapis.com (65)
+[2026-06-17 16:58:59] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: translate.googleapis.com | Tipo: A
+2026-06-17 16:58:59 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → translate.googleapis.com (A)
+[2026-06-17 16:58:59] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: translate.googleapis.com | Tipo: A
+2026-06-17 16:58:59 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → translate.googleapis.com (A)
+[2026-06-17 16:58:59] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: translate.googleapis.com | Tipo: 65
+2026-06-17 16:58:59 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → translate.googleapis.com (65)
+[2026-06-17 16:59:08] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: 65
+2026-06-17 16:59:08 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (65)
+[2026-06-17 16:59:08] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: A
+2026-06-17 16:59:08 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (A)
+[2026-06-17 16:59:08] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: A
+2026-06-17 16:59:08 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (A)
+[2026-06-17 16:59:08] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: 65
+2026-06-17 16:59:08 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (65)
+[2026-06-17 16:59:14] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 16:59:14 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (65)
+[2026-06-17 16:59:14] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: A
+2026-06-17 16:59:14 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (A)
+[2026-06-17 16:59:14] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: A
+2026-06-17 16:59:14 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (A)
+[2026-06-17 16:59:14] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 16:59:14 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (65)
+[2026-06-17 16:59:14] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:59:14 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 16:59:14] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 16:59:14 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+2026-06-17 16:59:21 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2118 | Dominios únicos: 134 | No autorizados: 264
+[2026-06-17 16:59:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 16:59:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (65)
+[2026-06-17 16:59:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 16:59:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (A)
+[2026-06-17 16:59:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 16:59:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (65)
+[2026-06-17 16:59:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 16:59:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (A)
+[2026-06-17 16:59:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: b1.nel.goog | Tipo: 65
+2026-06-17 16:59:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → b1.nel.goog (65)
+[2026-06-17 16:59:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: b1.nel.goog | Tipo: A
+2026-06-17 16:59:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → b1.nel.goog (A)
+[2026-06-17 16:59:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: b1.nel.goog | Tipo: 65
+2026-06-17 16:59:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → b1.nel.goog (65)
+[2026-06-17 16:59:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: b1.nel.goog | Tipo: A
+2026-06-17 16:59:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → b1.nel.goog (A)
+[2026-06-17 16:59:26] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: 65
+2026-06-17 16:59:26 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (65)
+[2026-06-17 16:59:26] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: A
+2026-06-17 16:59:26 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (A)
+[2026-06-17 16:59:26] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: A
+2026-06-17 16:59:26 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (A)
+[2026-06-17 16:59:26] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: 65
+2026-06-17 16:59:26 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (65)
+2026-06-17 17:00:12 [INFO] IDS.Main: Inicializando módulos del IDS...
+2026-06-17 17:00:12 [INFO] IDS.Whitelist: Whitelist cargada: 6 IPs | 6 MACs autorizadas.
+2026-06-17 17:00:12 [INFO] IDS.ThreatIntel: Blacklist cargada: 6 IPs peligrosas registradas.
+2026-06-17 17:00:12 [INFO] IDS.DNS: Base de datos inicializada en: /home/alexced06/Documentos/PROYECTO_DE_CIBERSEGURIDAD/ids_project/data/logs.db
+2026-06-17 17:00:12 [INFO] IDS.Main: Sistema listo | IPs autorizadas: 6 | IPs peligrosas: 6
+2026-06-17 17:00:12 [INFO] IDS.Sniffer: Iniciando captura en interfaz: wlo1
+2026-06-17 17:00:12 [INFO] IDS.Sniffer: Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local
+2026-06-17 17:00:12 [INFO] IDS.Sniffer: Presiona Ctrl+C en main.py para detener el sistema.
+[2026-06-17 17:00:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:00:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 17:00:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:00:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+2026-06-17 17:02:58 [INFO] IDS.Main: Inicializando módulos del IDS...
+2026-06-17 17:02:58 [INFO] IDS.Whitelist: Whitelist cargada: 6 IPs | 6 MACs autorizadas.
+2026-06-17 17:02:58 [INFO] IDS.ThreatIntel: Blacklist cargada: 6 IPs peligrosas registradas.
+2026-06-17 17:02:58 [INFO] IDS.DNS: Base de datos inicializada en: /home/alexced06/Documentos/PROYECTO_DE_CIBERSEGURIDAD/ids_project/data/logs.db
+2026-06-17 17:02:58 [INFO] IDS.Main: Sistema listo | IPs autorizadas: 6 | IPs peligrosas: 6
+2026-06-17 17:02:58 [INFO] IDS.Sniffer: Iniciando captura en interfaz: wlo1
+2026-06-17 17:02:58 [INFO] IDS.Sniffer: Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local
+2026-06-17 17:02:58 [INFO] IDS.Sniffer: Presiona Ctrl+C en main.py para detener el sistema.
+[2026-06-17 17:03:18] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 17:03:18 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (65)
+[2026-06-17 17:03:18] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: A
+2026-06-17 17:03:18 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (A)
+[2026-06-17 17:03:18] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 17:03:18 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (65)
+[2026-06-17 17:03:18] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: A
+2026-06-17 17:03:18 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (A)
+[2026-06-17 17:03:18] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:03:18 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 17:03:18] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:03:18 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+[2026-06-17 17:03:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:03:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 17:03:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:03:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 17:03:43] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:03:43 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 17:03:43] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 17:03:43 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (A)
+[2026-06-17 17:03:43] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:03:43 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+[2026-06-17 17:03:43] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 17:03:43 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (A)
+2026-06-17 17:03:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2144 | Dominios únicos: 135 | No autorizados: 277
+[2026-06-17 17:04:04] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:04:04 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:04:04] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:04:04 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:04:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: 65
+2026-06-17 17:04:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (65)
+[2026-06-17 17:04:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: A
+2026-06-17 17:04:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (A)
+[2026-06-17 17:04:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: A
+2026-06-17 17:04:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (A)
+[2026-06-17 17:04:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: 65
+2026-06-17 17:04:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (65)
+[2026-06-17 17:04:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: 65
+2026-06-17 17:04:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (65)
+[2026-06-17 17:04:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: A
+2026-06-17 17:04:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (A)
+[2026-06-17 17:04:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: 65
+2026-06-17 17:04:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (65)
+[2026-06-17 17:04:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: A
+2026-06-17 17:04:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (A)
+2026-06-17 17:04:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2154 | Dominios únicos: 135 | No autorizados: 282
+[2026-06-17 17:05:02] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: A
+2026-06-17 17:05:02 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (A)
+[2026-06-17 17:05:02] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: A
+2026-06-17 17:05:02 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (A)
+[2026-06-17 17:05:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:05:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:05:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:05:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:05:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:05:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:05:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:05:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:05:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:05:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 17:05:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:05:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+[2026-06-17 17:05:48] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:05:48 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 17:05:48] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:05:48 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+2026-06-17 17:05:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2164 | Dominios únicos: 135 | No autorizados: 287
+[2026-06-17 17:06:17] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: 65
+2026-06-17 17:06:17 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (65)
+[2026-06-17 17:06:17] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com | Tipo: A
+2026-06-17 17:06:17 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com (A)
+[2026-06-17 17:06:17] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: A
+2026-06-17 17:06:17 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (A)
+[2026-06-17 17:06:17] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com | Tipo: 65
+2026-06-17 17:06:17 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com (65)
+[2026-06-17 17:06:18] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (65)
+[2026-06-17 17:06:18] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → ogads-pa.clients6.google.com (A)
+[2026-06-17 17:06:18] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: 65
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (65)
+[2026-06-17 17:06:18] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: ogads-pa.clients6.google.com | Tipo: A
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → ogads-pa.clients6.google.com (A)
+[2026-06-17 17:06:18] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: 65
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (65)
+[2026-06-17 17:06:18] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: play.google.com | Tipo: A
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → play.google.com (A)
+[2026-06-17 17:06:18] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: 65
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (65)
+[2026-06-17 17:06:18] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: play.google.com | Tipo: A
+2026-06-17 17:06:18 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → play.google.com (A)
+[2026-06-17 17:06:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: b1.nel.goog | Tipo: 65
+2026-06-17 17:06:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → b1.nel.goog (65)
+[2026-06-17 17:06:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: b1.nel.goog | Tipo: A
+2026-06-17 17:06:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → b1.nel.goog (A)
+[2026-06-17 17:06:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: b1.nel.goog | Tipo: 65
+2026-06-17 17:06:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → b1.nel.goog (65)
+[2026-06-17 17:06:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: b1.nel.goog | Tipo: A
+2026-06-17 17:06:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → b1.nel.goog (A)
+[2026-06-17 17:06:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:06:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:06:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:06:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:06:28] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:06:28 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:06:28] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:06:28 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:06:30] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: oauthaccountmanager.googleapis.com | Tipo: 65
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → oauthaccountmanager.googleapis.com (65)
+[2026-06-17 17:06:30] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: oauthaccountmanager.googleapis.com | Tipo: A
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → oauthaccountmanager.googleapis.com (A)
+[2026-06-17 17:06:30] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: oauthaccountmanager.googleapis.com | Tipo: A
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → oauthaccountmanager.googleapis.com (A)
+[2026-06-17 17:06:30] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: oauthaccountmanager.googleapis.com | Tipo: 65
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → oauthaccountmanager.googleapis.com (65)
+[2026-06-17 17:06:30] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: developers.googleapis.com | Tipo: 65
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → developers.googleapis.com (65)
+[2026-06-17 17:06:30] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: developers.googleapis.com | Tipo: A
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → developers.googleapis.com (A)
+[2026-06-17 17:06:30] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: developers.googleapis.com | Tipo: A
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → developers.googleapis.com (A)
+[2026-06-17 17:06:30] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: developers.googleapis.com | Tipo: 65
+2026-06-17 17:06:30 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → developers.googleapis.com (65)
+[2026-06-17 17:06:34] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:06:34 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (65)
+[2026-06-17 17:06:34] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 17:06:34 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (A)
+[2026-06-17 17:06:34] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 17:06:34 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (A)
+[2026-06-17 17:06:34] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:06:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (65)
+[2026-06-17 17:06:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:06:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 17:06:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:06:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 17:06:50] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: chrome-devtools-frontend.appspot.com | Tipo: 65
+2026-06-17 17:06:50 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → chrome-devtools-frontend.appspot.com (65)
+[2026-06-17 17:06:50] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: chrome-devtools-frontend.appspot.com | Tipo: A
+2026-06-17 17:06:50 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → chrome-devtools-frontend.appspot.com (A)
+[2026-06-17 17:06:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: chrome-devtools-frontend.appspot.com | Tipo: A
+2026-06-17 17:06:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → chrome-devtools-frontend.appspot.com (A)
+[2026-06-17 17:06:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: chrome-devtools-frontend.appspot.com | Tipo: 65
+2026-06-17 17:06:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → chrome-devtools-frontend.appspot.com (65)
+2026-06-17 17:06:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2202 | Dominios únicos: 137 | No autorizados: 306
+2026-06-17 17:07:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2202 | Dominios únicos: 137 | No autorizados: 306
+[2026-06-17 17:07:59] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:07:59 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:07:59] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:07:59 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:08:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: cdnjs.cloudflare.com | Tipo: 65
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → cdnjs.cloudflare.com (65)
+[2026-06-17 17:08:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: cdnjs.cloudflare.com | Tipo: A
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → cdnjs.cloudflare.com (A)
+[2026-06-17 17:08:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: cdnjs.cloudflare.com | Tipo: 65
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → cdnjs.cloudflare.com (65)
+[2026-06-17 17:08:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: cdnjs.cloudflare.com | Tipo: A
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → cdnjs.cloudflare.com (A)
+[2026-06-17 17:08:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → content-autofill.googleapis.com (65)
+[2026-06-17 17:08:00] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: content-autofill.googleapis.com | Tipo: A
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → content-autofill.googleapis.com (A)
+[2026-06-17 17:08:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: content-autofill.googleapis.com | Tipo: A
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → content-autofill.googleapis.com (A)
+[2026-06-17 17:08:00] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 17:08:00 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → content-autofill.googleapis.com (65)
+[2026-06-17 17:08:04] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: optimizationguide-pa.googleapis.com | Tipo: 65
+2026-06-17 17:08:04 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → optimizationguide-pa.googleapis.com (65)
+[2026-06-17 17:08:04] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: optimizationguide-pa.googleapis.com | Tipo: A
+2026-06-17 17:08:04 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → optimizationguide-pa.googleapis.com (A)
+[2026-06-17 17:08:04] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: optimizationguide-pa.googleapis.com | Tipo: 65
+2026-06-17 17:08:04 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → optimizationguide-pa.googleapis.com (65)
+[2026-06-17 17:08:04] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: optimizationguide-pa.googleapis.com | Tipo: A
+2026-06-17 17:08:04 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → optimizationguide-pa.googleapis.com (A)
+[2026-06-17 17:08:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:08:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 17:08:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:08:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (AAAA)
+2026-06-17 17:08:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2218 | Dominios únicos: 138 | No autorizados: 314
+[2026-06-17 17:09:07] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:09:07 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:09:07] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:09:07 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:09:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.youtube.com | Tipo: 65
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.youtube.com (65)
+[2026-06-17 17:09:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.youtube.com | Tipo: A
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.youtube.com (A)
+[2026-06-17 17:09:28] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.youtube.com | Tipo: A
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.youtube.com (A)
+[2026-06-17 17:09:28] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.youtube.com | Tipo: 65
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.youtube.com (65)
+[2026-06-17 17:09:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: i.ytimg.com | Tipo: 65
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → i.ytimg.com (65)
+[2026-06-17 17:09:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: i.ytimg.com | Tipo: A
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → i.ytimg.com (A)
+[2026-06-17 17:09:28] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: i.ytimg.com | Tipo: A
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → i.ytimg.com (A)
+[2026-06-17 17:09:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: fonts.googleapis.com | Tipo: 65
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → fonts.googleapis.com (65)
+[2026-06-17 17:09:28] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: fonts.googleapis.com | Tipo: A
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → fonts.googleapis.com (A)
+[2026-06-17 17:09:28] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: fonts.googleapis.com | Tipo: A
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → fonts.googleapis.com (A)
+[2026-06-17 17:09:28] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: fonts.googleapis.com | Tipo: 65
+2026-06-17 17:09:28 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → fonts.googleapis.com (65)
+[2026-06-17 17:09:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: accounts.google.com | Tipo: 65
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → accounts.google.com (65)
+[2026-06-17 17:09:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: accounts.google.com | Tipo: A
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → accounts.google.com (A)
+[2026-06-17 17:09:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: accounts.google.com | Tipo: A
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → accounts.google.com (A)
+[2026-06-17 17:09:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: i.ytimg.com | Tipo: 65
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → i.ytimg.com (65)
+[2026-06-17 17:09:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: accounts.google.com | Tipo: 65
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → accounts.google.com (65)
+[2026-06-17 17:09:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: fonts.gstatic.com | Tipo: 65
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → fonts.gstatic.com (65)
+[2026-06-17 17:09:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: fonts.gstatic.com | Tipo: A
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → fonts.gstatic.com (A)
+[2026-06-17 17:09:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: fonts.gstatic.com | Tipo: 65
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → fonts.gstatic.com (65)
+[2026-06-17 17:09:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: fonts.gstatic.com | Tipo: A
+2026-06-17 17:09:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → fonts.gstatic.com (A)
+[2026-06-17 17:09:34] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: googleads.g.doubleclick.net | Tipo: 65
+2026-06-17 17:09:34 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → googleads.g.doubleclick.net (65)
+[2026-06-17 17:09:34] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: googleads.g.doubleclick.net | Tipo: A
+2026-06-17 17:09:34 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → googleads.g.doubleclick.net (A)
+[2026-06-17 17:09:34] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: googleads.g.doubleclick.net | Tipo: A
+2026-06-17 17:09:34 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → googleads.g.doubleclick.net (A)
+[2026-06-17 17:09:34] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: googleads.g.doubleclick.net | Tipo: 65
+2026-06-17 17:09:34 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → googleads.g.doubleclick.net (65)
+[2026-06-17 17:09:36] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 17:09:36 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → content-autofill.googleapis.com (65)
+[2026-06-17 17:09:36] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: content-autofill.googleapis.com | Tipo: A
+2026-06-17 17:09:36 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → content-autofill.googleapis.com (A)
+[2026-06-17 17:09:36] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: content-autofill.googleapis.com | Tipo: A
+2026-06-17 17:09:37 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → content-autofill.googleapis.com (A)
+[2026-06-17 17:09:37] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 17:09:37 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → content-autofill.googleapis.com (65)
+[2026-06-17 17:09:40] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com.mx | Tipo: 65
+2026-06-17 17:09:40 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com.mx (65)
+[2026-06-17 17:09:40] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.google.com.mx | Tipo: A
+2026-06-17 17:09:40 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.google.com.mx (A)
+[2026-06-17 17:09:40] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com.mx | Tipo: A
+2026-06-17 17:09:40 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com.mx (A)
+[2026-06-17 17:09:40] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.google.com.mx | Tipo: 65
+2026-06-17 17:09:40 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.google.com.mx (65)
+[2026-06-17 17:09:41] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.gstatic.com | Tipo: 65
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.gstatic.com (65)
+[2026-06-17 17:09:41] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.gstatic.com | Tipo: A
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.gstatic.com (A)
+[2026-06-17 17:09:41] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: static.doubleclick.net | Tipo: 65
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → static.doubleclick.net (65)
+[2026-06-17 17:09:41] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: static.doubleclick.net | Tipo: A
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → static.doubleclick.net (A)
+[2026-06-17 17:09:41] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.gstatic.com | Tipo: 65
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.gstatic.com (65)
+[2026-06-17 17:09:41] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.gstatic.com | Tipo: A
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.gstatic.com (A)
+[2026-06-17 17:09:41] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: static.doubleclick.net | Tipo: A
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → static.doubleclick.net (A)
+[2026-06-17 17:09:41] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: static.doubleclick.net | Tipo: 65
+2026-06-17 17:09:41 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → static.doubleclick.net (65)
+[2026-06-17 17:09:46] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: youtube.com | Tipo: 65
+2026-06-17 17:09:46 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → youtube.com (65)
+[2026-06-17 17:09:46] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: youtube.com | Tipo: A
+2026-06-17 17:09:46 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → youtube.com (A)
+[2026-06-17 17:09:46] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: youtube.com | Tipo: A
+2026-06-17 17:09:46 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → youtube.com (A)
+[2026-06-17 17:09:46] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: youtube.com | Tipo: 65
+2026-06-17 17:09:46 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → youtube.com (65)
+2026-06-17 17:09:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2264 | Dominios únicos: 141 | No autorizados: 337
+[2026-06-17 17:10:02] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: A
+2026-06-17 17:10:02 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (A)
+[2026-06-17 17:10:02] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: A
+2026-06-17 17:10:02 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (A)
+[2026-06-17 17:10:06] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: 65
+2026-06-17 17:10:06 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (65)
+[2026-06-17 17:10:06] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: A
+2026-06-17 17:10:06 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (A)
+[2026-06-17 17:10:06] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: A
+2026-06-17 17:10:06 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (A)
+[2026-06-17 17:10:06] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: 65
+2026-06-17 17:10:06 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (65)
+[2026-06-17 17:10:11] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:10:11 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:10:11] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:10:11 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:10:11] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:10:11 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:10:11] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:10:11 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:10:17] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 17:10:17 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (65)
+[2026-06-17 17:10:17] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: A
+2026-06-17 17:10:17 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (A)
+[2026-06-17 17:10:17] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: A
+2026-06-17 17:10:17 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (A)
+[2026-06-17 17:10:17] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 17:10:17 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (65)
+[2026-06-17 17:10:17] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:10:17 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 17:10:17] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:10:17 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+[2026-06-17 17:10:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:10:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 17:10:21] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 17:10:21 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (A)
+[2026-06-17 17:10:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 17:10:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (A)
+[2026-06-17 17:10:21] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:10:21 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+[2026-06-17 17:10:30] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:10:30 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (65)
+[2026-06-17 17:10:30] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 17:10:30 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (A)
+[2026-06-17 17:10:30] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:10:30 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (65)
+[2026-06-17 17:10:30] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:10:30 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 17:10:30] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 17:10:30 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (A)
+[2026-06-17 17:10:30] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:10:30 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 17:10:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clientservices.googleapis.com | Tipo: 65
+2026-06-17 17:10:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clientservices.googleapis.com (65)
+[2026-06-17 17:10:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clientservices.googleapis.com | Tipo: A
+2026-06-17 17:10:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clientservices.googleapis.com (A)
+[2026-06-17 17:10:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clientservices.googleapis.com | Tipo: A
+2026-06-17 17:10:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clientservices.googleapis.com (A)
+[2026-06-17 17:10:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clientservices.googleapis.com | Tipo: 65
+2026-06-17 17:10:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clientservices.googleapis.com (65)
+[2026-06-17 17:10:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: accounts.google.com | Tipo: 65
+2026-06-17 17:10:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → accounts.google.com (65)
+[2026-06-17 17:10:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: accounts.google.com | Tipo: 65
+2026-06-17 17:10:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → accounts.google.com (65)
+2026-06-17 17:10:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2296 | Dominios únicos: 141 | No autorizados: 353
+[2026-06-17 17:11:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:11:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (65)
+[2026-06-17 17:11:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 17:11:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons.gcp.gvt2.com (A)
+[2026-06-17 17:11:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:11:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (65)
+[2026-06-17 17:11:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons.gcp.gvt2.com | Tipo: A
+2026-06-17 17:11:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons.gcp.gvt2.com (A)
+[2026-06-17 17:11:35] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:11:35 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 17:11:35] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: beacons-handoff.gcp.gvt2.com | Tipo: 65
+2026-06-17 17:11:35 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → beacons-handoff.gcp.gvt2.com (65)
+[2026-06-17 17:11:37] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clientservices.googleapis.com | Tipo: 65
+2026-06-17 17:11:37 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clientservices.googleapis.com (65)
+[2026-06-17 17:11:37] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clientservices.googleapis.com | Tipo: 65
+2026-06-17 17:11:37 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clientservices.googleapis.com (65)
+[2026-06-17 17:11:37] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: accounts.google.com | Tipo: 65
+2026-06-17 17:11:37 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → accounts.google.com (65)
+[2026-06-17 17:11:37] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: accounts.google.com | Tipo: A
+2026-06-17 17:11:37 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → accounts.google.com (A)
+[2026-06-17 17:11:37] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: accounts.google.com | Tipo: 65
+2026-06-17 17:11:37 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → accounts.google.com (65)
+[2026-06-17 17:11:37] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: accounts.google.com | Tipo: A
+2026-06-17 17:11:37 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → accounts.google.com (A)
+[2026-06-17 17:11:40] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:11:40 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:11:40] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:11:40 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:11:40] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:11:40 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:11:40] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:11:40 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+2026-06-17 17:11:51 [CRITICAL] IDS.ThreatIntel: [AMENAZA DETECTADA] 2026-06-17 17:11:51 | Origen: 10.13.170.235 (c4:03:a8:2d:a8:ca) → Destino peligroso: 185.220.101.47 | Riesgo: Nodo de salida TOR / Botnet [CRITICO] | Fuente: AbuseIPDB
+[2026-06-17 17:11:51] AMENAZA | Nivel: CRITICO | Origen: 10.13.170.235 (c4:03:a8:2d:a8:ca) | Destino: 185.220.101.47 | Riesgo: Nodo de salida TOR / Botnet | Fuente: AbuseIPDB
+2026-06-17 17:11:51 [INFO] IDS.Forense: [FORENSE] Iniciando análisis forense para: 185.220.101.47
+[2026-06-17 17:11:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: smtp.gmail.com | Tipo: A
+2026-06-17 17:11:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → smtp.gmail.com (A)
+[2026-06-17 17:11:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: smtp.gmail.com | Tipo: AAAA
+2026-06-17 17:11:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → smtp.gmail.com (AAAA)
+[2026-06-17 17:11:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: smtp.gmail.com | Tipo: A
+2026-06-17 17:11:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → smtp.gmail.com (A)
+[2026-06-17 17:11:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: smtp.gmail.com | Tipo: AAAA
+2026-06-17 17:11:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → smtp.gmail.com (AAAA)
+[2026-06-17 17:11:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: 47.101.220.185.origin.asn.cymru.com | Tipo: TXT
+2026-06-17 17:11:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → 47.101.220.185.origin.asn.cymru.com (TXT)
+[2026-06-17 17:11:52] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: 47.101.220.185.origin.asn.cymru.com | Tipo: TXT
+2026-06-17 17:11:52 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → 47.101.220.185.origin.asn.cymru.com (TXT)
+[2026-06-17 17:11:52] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: AS60729.asn.cymru.com | Tipo: TXT
+2026-06-17 17:11:52 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → AS60729.asn.cymru.com (TXT)
+[2026-06-17 17:11:52] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: AS60729.asn.cymru.com | Tipo: TXT
+2026-06-17 17:11:52 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → AS60729.asn.cymru.com (TXT)
+[2026-06-17 17:11:52] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: rdap.db.ripe.net | Tipo: A
+2026-06-17 17:11:52 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → rdap.db.ripe.net (A)
+[2026-06-17 17:11:52] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: rdap.db.ripe.net | Tipo: AAAA
+2026-06-17 17:11:52 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → rdap.db.ripe.net (AAAA)
+[2026-06-17 17:11:52] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: rdap.db.ripe.net | Tipo: A
+2026-06-17 17:11:52 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → rdap.db.ripe.net (A)
+[2026-06-17 17:11:52] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: rdap.db.ripe.net | Tipo: AAAA
+2026-06-17 17:11:52 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → rdap.db.ripe.net (AAAA)
+2026-06-17 17:11:53 [WARNING] IDS.Forense: [FORENSE Whois] No se pudo obtener info para 185.220.101.47: 'NoneType' object is not iterable
+[2026-06-17 17:11:53] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: api.abuseipdb.com | Tipo: A
+2026-06-17 17:11:53 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → api.abuseipdb.com (A)
+[2026-06-17 17:11:53] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: api.abuseipdb.com | Tipo: AAAA
+2026-06-17 17:11:53 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → api.abuseipdb.com (AAAA)
+[2026-06-17 17:11:53] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: api.abuseipdb.com | Tipo: AAAA
+2026-06-17 17:11:53 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → api.abuseipdb.com (AAAA)
+[2026-06-17 17:11:53] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: api.abuseipdb.com | Tipo: A
+2026-06-17 17:11:53 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → api.abuseipdb.com (A)
+2026-06-17 17:11:53 [INFO] IDS.Forense: [FORENSE AbuseIPDB] IP: 185.220.101.47 | Score: 100 | Reportes: 92
+2026-06-17 17:11:54 [INFO] IDS.Email: Correo enviado a cedenoalejandro0612@gmail.com: 🚨 [IDS EMERGENCIA] Conexión a IP peligrosa — 185.220.101.47
+2026-06-17 17:11:55 [INFO] IDS.Email: Correo enviado a cedenoalejandro0612@gmail.com: 🔎 [IDS FORENSE] Reporte de IP peligrosa — 185.220.101.47
+2026-06-17 17:11:55 [INFO] IDS.Forense: [FORENSE] Reporte forense enviado para: 185.220.101.47
+2026-06-17 17:11:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2328 | Dominios únicos: 141 | No autorizados: 369
+[2026-06-17 17:12:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: nexus-websocket-a.intercom.io | Tipo: 65
+2026-06-17 17:12:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → nexus-websocket-a.intercom.io (65)
+[2026-06-17 17:12:20] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: nexus-websocket-a.intercom.io | Tipo: A
+2026-06-17 17:12:20 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → nexus-websocket-a.intercom.io (A)
+[2026-06-17 17:12:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: nexus-websocket-a.intercom.io | Tipo: 65
+2026-06-17 17:12:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → nexus-websocket-a.intercom.io (65)
+[2026-06-17 17:12:20] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: nexus-websocket-a.intercom.io | Tipo: A
+2026-06-17 17:12:20 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → nexus-websocket-a.intercom.io (A)
+[2026-06-17 17:12:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.youtube.com | Tipo: 65
+2026-06-17 17:12:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.youtube.com (65)
+[2026-06-17 17:12:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: www.youtube.com | Tipo: A
+2026-06-17 17:12:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → www.youtube.com (A)
+[2026-06-17 17:12:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.youtube.com | Tipo: A
+2026-06-17 17:12:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.youtube.com (A)
+[2026-06-17 17:12:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: www.youtube.com | Tipo: 65
+2026-06-17 17:12:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → www.youtube.com (65)
+2026-06-17 17:12:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2336 | Dominios únicos: 142 | No autorizados: 373
+[2026-06-17 17:13:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:13:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 17:13:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:13:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (AAAA)
+2026-06-17 17:13:58 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2338 | Dominios únicos: 142 | No autorizados: 374
+[2026-06-17 17:14:02] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:14:02 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:14:02] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:14:02 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:14:02] DNS | Estado: AUTORIZADO | IP: fe80::949:9f8c:4b13:8d9f | MAC: c4:03:a8:2d:a8:ca | Dominio: _ipp._tcp.local | Tipo: PTR
+2026-06-17 17:14:02 [INFO] IDS.DNS: [DNS] AUTORIZADO | fe80::949:9f8c:4b13:8d9f → _ipp._tcp.local (PTR)
+[2026-06-17 17:14:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: b1.nel.goog | Tipo: 65
+2026-06-17 17:14:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → b1.nel.goog (65)
+[2026-06-17 17:14:25] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: b1.nel.goog | Tipo: A
+2026-06-17 17:14:25 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → b1.nel.goog (A)
+[2026-06-17 17:14:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: b1.nel.goog | Tipo: A
+2026-06-17 17:14:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → b1.nel.goog (A)
+[2026-06-17 17:14:25] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: b1.nel.goog | Tipo: 65
+2026-06-17 17:14:25 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → b1.nel.goog (65)
+[2026-06-17 17:14:46] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: 65
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (65)
+[2026-06-17 17:14:46] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: claude.ai | Tipo: A
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → claude.ai (A)
+[2026-06-17 17:14:46] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: 65
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (65)
+[2026-06-17 17:14:46] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: claude.ai | Tipo: A
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → claude.ai (A)
+[2026-06-17 17:14:46] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: safebrowsing.googleapis.com | Tipo: 65
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → safebrowsing.googleapis.com (65)
+[2026-06-17 17:14:46] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: safebrowsing.googleapis.com | Tipo: A
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → safebrowsing.googleapis.com (A)
+[2026-06-17 17:14:46] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: safebrowsing.googleapis.com | Tipo: 65
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → safebrowsing.googleapis.com (65)
+[2026-06-17 17:14:46] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: safebrowsing.googleapis.com | Tipo: A
+2026-06-17 17:14:46 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → safebrowsing.googleapis.com (A)
+2026-06-17 17:25:21 [INFO] IDS.Main: Inicializando módulos del IDS...
+2026-06-17 17:25:21 [INFO] IDS.Whitelist: Whitelist cargada: 6 IPs | 6 MACs autorizadas.
+2026-06-17 17:25:21 [INFO] IDS.ThreatIntel: Blacklist cargada: 6 IPs peligrosas registradas.
+2026-06-17 17:25:21 [INFO] IDS.DNS: Base de datos inicializada en: /home/alexced06/Documentos/PROYECTO_DE_CIBERSEGURIDAD/ids_project/data/logs.db
+2026-06-17 17:25:21 [INFO] IDS.Main: Sistema listo | IPs autorizadas: 6 | IPs peligrosas: 6
+2026-06-17 17:25:21 [INFO] IDS.Sniffer: Iniciando captura en interfaz: wlo1
+2026-06-17 17:25:21 [INFO] IDS.Sniffer: Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local
+2026-06-17 17:25:21 [INFO] IDS.Sniffer: Presiona Ctrl+C en main.py para detener el sistema.
+[2026-06-17 17:25:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:25:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:25:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:25:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:25:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:25:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:25:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:25:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+2026-06-17 17:26:05 [CRITICAL] IDS.ThreatIntel: [AMENAZA DETECTADA] 2026-06-17 17:26:05 | Origen: 10.13.170.235 (c4:03:a8:2d:a8:ca) → Destino peligroso: 185.220.101.47 | Riesgo: Nodo de salida TOR / Botnet [CRITICO] | Fuente: AbuseIPDB
+[2026-06-17 17:26:05] AMENAZA | Nivel: CRITICO | Origen: 10.13.170.235 (c4:03:a8:2d:a8:ca) | Destino: 185.220.101.47 | Riesgo: Nodo de salida TOR / Botnet | Fuente: AbuseIPDB
+2026-06-17 17:26:05 [INFO] IDS.Forense: [FORENSE] Iniciando análisis forense para: 185.220.101.47
+[2026-06-17 17:26:05] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: smtp.gmail.com | Tipo: A
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → smtp.gmail.com (A)
+[2026-06-17 17:26:05] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: smtp.gmail.com | Tipo: AAAA
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → smtp.gmail.com (AAAA)
+[2026-06-17 17:26:05] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: smtp.gmail.com | Tipo: A
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → smtp.gmail.com (A)
+[2026-06-17 17:26:05] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: rdap.db.ripe.net | Tipo: A
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → rdap.db.ripe.net (A)
+[2026-06-17 17:26:05] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: rdap.db.ripe.net | Tipo: AAAA
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → rdap.db.ripe.net (AAAA)
+[2026-06-17 17:26:05] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: rdap.db.ripe.net | Tipo: A
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → rdap.db.ripe.net (A)
+[2026-06-17 17:26:05] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: rdap.db.ripe.net | Tipo: AAAA
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → rdap.db.ripe.net (AAAA)
+[2026-06-17 17:26:05] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: smtp.gmail.com | Tipo: AAAA
+2026-06-17 17:26:05 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → smtp.gmail.com (AAAA)
+2026-06-17 17:26:06 [WARNING] IDS.Forense: [FORENSE Whois] No se pudo obtener info para 185.220.101.47: 'NoneType' object is not iterable
+[2026-06-17 17:26:06] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: api.abuseipdb.com | Tipo: A
+2026-06-17 17:26:06 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → api.abuseipdb.com (A)
+[2026-06-17 17:26:06] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: api.abuseipdb.com | Tipo: AAAA
+2026-06-17 17:26:06 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → api.abuseipdb.com (AAAA)
+[2026-06-17 17:26:06] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: api.abuseipdb.com | Tipo: A
+2026-06-17 17:26:06 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → api.abuseipdb.com (A)
+[2026-06-17 17:26:06] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: api.abuseipdb.com | Tipo: AAAA
+2026-06-17 17:26:06 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → api.abuseipdb.com (AAAA)
+2026-06-17 17:26:07 [INFO] IDS.Forense: [FORENSE AbuseIPDB] IP: 185.220.101.47 | Score: 100 | Reportes: 92
+2026-06-17 17:26:08 [INFO] IDS.Email: Correo enviado a cedenoalejandro0612@gmail.com: 🚨 [IDS EMERGENCIA] Conexión a IP peligrosa — 185.220.101.47
+2026-06-17 17:26:09 [INFO] IDS.Email: Correo enviado a cedenoalejandro0612@gmail.com: 🔎 [IDS FORENSE] Reporte de IP peligrosa — 185.220.101.47
+2026-06-17 17:26:09 [INFO] IDS.Forense: [FORENSE] Reporte forense enviado para: 185.220.101.47
+2026-06-17 17:26:21 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2369 | Dominios únicos: 142 | No autorizados: 389
+[2026-06-17 17:26:27] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: downloads.claude.ai | Tipo: A
+2026-06-17 17:26:27 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → downloads.claude.ai (A)
+[2026-06-17 17:26:27] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: downloads.claude.ai | Tipo: AAAA
+2026-06-17 17:26:27 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → downloads.claude.ai (AAAA)
+[2026-06-17 17:26:27] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: downloads.claude.ai | Tipo: A
+2026-06-17 17:26:27 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → downloads.claude.ai (A)
+[2026-06-17 17:26:27] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: downloads.claude.ai | Tipo: AAAA
+2026-06-17 17:26:27 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → downloads.claude.ai (AAAA)
+[2026-06-17 17:26:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:26:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 17:26:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:26:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+2026-06-17 17:27:21 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2375 | Dominios únicos: 143 | No autorizados: 392
+[2026-06-17 17:27:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: main.vscode-cdn.net | Tipo: 65
+2026-06-17 17:27:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → main.vscode-cdn.net (65)
+[2026-06-17 17:27:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: main.vscode-cdn.net | Tipo: A
+2026-06-17 17:27:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → main.vscode-cdn.net (A)
+[2026-06-17 17:27:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: main.vscode-cdn.net | Tipo: A
+2026-06-17 17:27:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → main.vscode-cdn.net (A)
+[2026-06-17 17:27:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: main.vscode-cdn.net | Tipo: 65
+2026-06-17 17:27:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → main.vscode-cdn.net (65)
+[2026-06-17 17:27:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: part-0029.t-0009.fb-t-msedge.net | Tipo: 65
+2026-06-17 17:27:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → part-0029.t-0009.fb-t-msedge.net (65)
+[2026-06-17 17:27:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: part-0029.t-0009.fb-t-msedge.net | Tipo: 65
+2026-06-17 17:27:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → part-0029.t-0009.fb-t-msedge.net (65)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: challenges.cloudflare.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → challenges.cloudflare.com (65)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: challenges.cloudflare.com | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → challenges.cloudflare.com (A)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: challenges.cloudflare.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → challenges.cloudflare.com (65)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: challenges.cloudflare.com | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → challenges.cloudflare.com (A)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: 5b6754b8b4e4.w.hcaptcha.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → 5b6754b8b4e4.w.hcaptcha.com (65)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: 5b6754b8b4e4.w.hcaptcha.com | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → 5b6754b8b4e4.w.hcaptcha.com (A)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: 5b6754b8b4e4.w.hcaptcha.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → 5b6754b8b4e4.w.hcaptcha.com (65)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: 5b6754b8b4e4.w.hcaptcha.com | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → 5b6754b8b4e4.w.hcaptcha.com (A)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-cdn.claude.ai | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-cdn.claude.ai (65)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-cdn.claude.ai | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-cdn.claude.ai (A)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → content-autofill.googleapis.com (65)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: api.hcaptcha.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → api.hcaptcha.com (65)
+[2026-06-17 17:27:44] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: api.hcaptcha.com | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → api.hcaptcha.com (A)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: content-autofill.googleapis.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → content-autofill.googleapis.com (65)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-cdn.claude.ai | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-cdn.claude.ai (A)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: api.hcaptcha.com | Tipo: A
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → api.hcaptcha.com (A)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: api.hcaptcha.com | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → api.hcaptcha.com (65)
+[2026-06-17 17:27:44] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-cdn.claude.ai | Tipo: 65
+2026-06-17 17:27:44 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-cdn.claude.ai (65)
+[2026-06-17 17:27:52] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:27:52 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:27:52] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:27:52 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:27:59] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 17:27:59 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (65)
+[2026-06-17 17:27:59] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients4.google.com | Tipo: A
+2026-06-17 17:27:59 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients4.google.com (A)
+[2026-06-17 17:27:59] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: 65
+2026-06-17 17:27:59 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (65)
+[2026-06-17 17:27:59] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients4.google.com | Tipo: A
+2026-06-17 17:27:59 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients4.google.com (A)
+[2026-06-17 17:27:59] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:27:59 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → clients.l.google.com (65)
+[2026-06-17 17:27:59] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: clients.l.google.com | Tipo: 65
+2026-06-17 17:27:59 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → clients.l.google.com (65)
+2026-06-17 17:28:21 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2407 | Dominios únicos: 148 | No autorizados: 408
+[2026-06-17 17:28:32] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:28:32 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 17:28:32] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: connectivity-check.ubuntu.com | Tipo: AAAA
+2026-06-17 17:28:32 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → connectivity-check.ubuntu.com (AAAA)
+[2026-06-17 17:28:52] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:28:52 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:28:52] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:28:52 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:28:52] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: A
+2026-06-17 17:28:52 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (A)
+[2026-06-17 17:28:52] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:28:52 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+2026-06-17 17:36:22 [INFO] IDS.Main: Inicializando módulos del IDS...
+2026-06-17 17:36:22 [INFO] IDS.Whitelist: Whitelist cargada: 6 IPs | 6 MACs autorizadas.
+2026-06-17 17:36:22 [INFO] IDS.ThreatIntel: Blacklist cargada: 6 IPs peligrosas registradas.
+2026-06-17 17:36:22 [INFO] IDS.DNS: Base de datos inicializada en: /home/alexced06/Documentos/PROYECTO_DE_CIBERSEGURIDAD/ids_project/data/logs.db
+2026-06-17 17:36:22 [INFO] IDS.Main: Sistema listo | IPs autorizadas: 6 | IPs peligrosas: 6
+2026-06-17 17:36:22 [INFO] IDS.Sniffer: Iniciando captura en interfaz: wlo1
+2026-06-17 17:36:22 [INFO] IDS.Sniffer: Filtro activo: IPv4, IPv6, ARP — Solo tráfico de red local
+2026-06-17 17:36:22 [INFO] IDS.Sniffer: Presiona Ctrl+C en main.py para detener el sistema.
+2026-06-17 17:37:22 [INFO] IDS.Main: [Estadísticas] Consultas DNS: 2413 | Dominios únicos: 148 | No autorizados: 411
+[2026-06-17 17:37:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: main.vscode-cdn.net | Tipo: 65
+2026-06-17 17:37:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → main.vscode-cdn.net (65)
+[2026-06-17 17:37:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: main.vscode-cdn.net | Tipo: A
+2026-06-17 17:37:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → main.vscode-cdn.net (A)
+[2026-06-17 17:37:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: main.vscode-cdn.net | Tipo: 65
+2026-06-17 17:37:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → main.vscode-cdn.net (65)
+[2026-06-17 17:37:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: main.vscode-cdn.net | Tipo: A
+2026-06-17 17:37:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → main.vscode-cdn.net (A)
+[2026-06-17 17:37:24] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: part-0029.t-0009.fb-t-msedge.net | Tipo: 65
+2026-06-17 17:37:24 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → part-0029.t-0009.fb-t-msedge.net (65)
+[2026-06-17 17:37:24] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: part-0029.t-0009.fb-t-msedge.net | Tipo: 65
+2026-06-17 17:37:24 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → part-0029.t-0009.fb-t-msedge.net (65)
+[2026-06-17 17:37:49] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:37:49 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:37:49] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: browser-intake-us5-datadoghq.com | Tipo: 65
+2026-06-17 17:37:49 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → browser-intake-us5-datadoghq.com (65)
+[2026-06-17 17:37:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:37:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (65)
+[2026-06-17 17:37:51] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 17:37:51 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → a-api.anthropic.com (A)
+[2026-06-17 17:37:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: A
+2026-06-17 17:37:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (A)
+[2026-06-17 17:37:51] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: a-api.anthropic.com | Tipo: 65
+2026-06-17 17:37:51 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → a-api.anthropic.com (65)
+[2026-06-17 17:38:01] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: downloads.claude.ai | Tipo: A
+2026-06-17 17:38:01 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → downloads.claude.ai (A)
+[2026-06-17 17:38:01] DNS | Estado: AUTORIZADO | IP: 10.13.170.235 | MAC: c4:03:a8:2d:a8:ca | Dominio: downloads.claude.ai | Tipo: AAAA
+2026-06-17 17:38:01 [INFO] IDS.DNS: [DNS] AUTORIZADO | 10.13.170.235 → downloads.claude.ai (AAAA)
+[2026-06-17 17:38:01] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: downloads.claude.ai | Tipo: AAAA
+2026-06-17 17:38:01 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → downloads.claude.ai (AAAA)
+[2026-06-17 17:38:01] DNS | Estado: NO_AUTORIZADO | IP: 148.211.120.54 | MAC: 04:d5:90:0a:18:4c | Dominio: downloads.claude.ai | Tipo: A
+2026-06-17 17:38:01 [INFO] IDS.DNS: [DNS] NO_AUTORIZADO | 148.211.120.54 → downloads.claude.ai (A)

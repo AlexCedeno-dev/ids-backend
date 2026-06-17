@@ -11,6 +11,7 @@ Descripción: Gestiona la inteligencia de amenazas (Threat Intelligence).
 
 import json
 import logging
+import sqlite3
 import threading
 from datetime import datetime
 
@@ -67,6 +68,33 @@ def verificar_ip_destino(ip_origen: str, mac_origen: str, ip_destino: str) -> bo
         f"Destino peligroso: {ip_destino} | "
         f"Riesgo: {tipo_riesgo} [{nivel}] | Fuente: {fuente}"
     )
+
+    # Persistir amenaza en SQLite
+    try:
+        conn = sqlite3.connect(config.DB_FILE)
+        cur  = conn.cursor()
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS amenazas_log (
+                id          INTEGER PRIMARY KEY AUTOINCREMENT,
+                ip_destino  TEXT NOT NULL,
+                ip_origen   TEXT NOT NULL,
+                mac_origen  TEXT NOT NULL,
+                tipo_riesgo TEXT NOT NULL,
+                nivel       TEXT NOT NULL,
+                fuente      TEXT NOT NULL,
+                timestamp   TEXT NOT NULL
+            )
+        """)
+        cur.execute(
+            "INSERT INTO amenazas_log "
+            "(ip_destino, ip_origen, mac_origen, tipo_riesgo, nivel, fuente, timestamp) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?)",
+            (ip_destino, ip_origen, mac_origen, tipo_riesgo, nivel, fuente, timestamp)
+        )
+        conn.commit()
+        conn.close()
+    except sqlite3.Error as e:
+        logger.error(f"Error al guardar amenaza en BD: {e}")
 
     # Escribir en log de alertas
     linea = (

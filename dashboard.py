@@ -180,11 +180,10 @@ def _get_ips_peligrosas() -> list:
     except (FileNotFoundError, json.JSONDecodeError):
         blacklist = []
 
-    # IPs que aparecen como origen en el log DNS
-    ips_en_log = set()
-    rows = _db_query("SELECT DISTINCT ip_origen FROM dns_log")
-    for r in rows:
-        ips_en_log.add(r["ip_origen"])
+    # IPs que ya fueron detectadas como destino peligroso (fuente de verdad)
+    ips_detectadas = set()
+    for r in _db_query("SELECT DISTINCT ip_destino FROM amenazas_log"):
+        ips_detectadas.add(r["ip_destino"])
 
     resultado = []
     for entrada in blacklist:
@@ -194,7 +193,7 @@ def _get_ips_peligrosas() -> list:
             "tipo_riesgo": entrada.get("tipo_riesgo", "Desconocido"),
             "nivel":       entrada.get("nivel", "ALTO"),
             "fuente":      entrada.get("fuente", "Desconocida"),
-            "detectada":   ip in ips_en_log,
+            "detectada":   ip in ips_detectadas,
         })
     return resultado
 
@@ -368,6 +367,21 @@ def api_blacklist_post():
         data["ips_peligrosas"] = ips_peligrosas
         _write_json(BLACKLIST_FILE, data)
         return jsonify({"ok": True, "entrada": entrada}), 201
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route("/api/blacklist/<ip>", methods=["DELETE"])
+def api_blacklist_delete(ip: str):
+    try:
+        data = _read_json(BLACKLIST_FILE)
+        ips = data.get("ips_peligrosas", [])
+        originales = len(ips)
+        data["ips_peligrosas"] = [e for e in ips if e.get("ip") != ip]
+        if len(data["ips_peligrosas"]) == originales:
+            return jsonify({"error": f"IP {ip} no encontrada en la blacklist"}), 404
+        _write_json(BLACKLIST_FILE, data)
+        return jsonify({"ok": True, "eliminada": ip})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
